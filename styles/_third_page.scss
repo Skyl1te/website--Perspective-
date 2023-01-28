@@ -1,0 +1,96 @@
+@import '_extra.scss';
+
+.third-page {
+	height: 700px;
+	margin-top: 60px;
+
+	.container {
+		padding: 105px;
+	}
+
+	.content {
+		font-family: 'Montserrat';
+		font-style: italic;
+		font-weight: 500;
+		font-size: 32px;
+		line-height: 70px;
+		/* or 219% */	
+		margin-top: 40px;
+		text-align: center;
+	}
+
+	.content::before{
+    content: '.';
+    position: absolute;
+    background-size: 100%;
+    width: 95px;
+    height: 66px;
+    left: 0%;
+    background-image: url(quote.png);
+	}
+
+	.content::after{
+    content: '.';
+    position: absolute;
+    background-size: 100%;
+    width: 95px;
+    height: 66px;
+    right: 0%;
+    transform: rotate(180deg);
+    background-image: url(quote.png);
+	}
+
+	.blocks {
+		display: flex;
+		align-items: center;
+		flex-direction: column;
+		width: 100%;
+		margin-top: 30px;
+
+		.down__content {
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+			width: 45%;
+
+			.email, .tel {
+				display: flex;
+
+				i {
+					padding-right: 8px;
+					color: $salat;
+				}
+			}
+
+			&__-text {
+				font-family: 'Source Sans 3';
+				font-style: normal;
+				font-weight: 400;
+				font-size: 16px;
+				line-height: 28px;
+				/* identical to box height, or 175% */
+
+
+				color: #505050;
+			}
+		}
+
+		.h4 {
+			font-family: 'Montserrat';
+			font-style: normal;
+			font-weight: 600;
+			font-size: 24px;
+			line-height: 32px;
+		}
+
+		.h6 {
+			font-family: 'Source Sans 3';
+			font-style: normal;
+			font-weight: 400;
+			font-size: 16px;
+			line-height: 28px;
+			/* identical to box height, or 175% */
+			color: #505050;
+		}
+	}
+}

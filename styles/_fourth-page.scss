@@ -1,0 +1,89 @@
+@import '_extra.scss';
+
+.fourth-page {
+	height: 1200px;
+
+	.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+	}
+
+	.up-title {
+		margin-top: -40px;
+	}
+
+	.blocks {
+		display: flex;
+		width: 100%;
+		justify-content: space-between;
+		align-items: center;
+		height: 230px;
+	
+		.block {
+			 width: 30%;
+		    display: flex;
+		    align-items: center;
+		    flex-direction: column;
+		    justify-content: space-between;
+		    height: 100%;
+			img {
+				width: 124px;
+				height: 124px;
+			}
+
+			&__connotation {
+				font-family: 'Montserrat';
+				font-style: normal;
+				font-weight: 700;
+				font-size: 28px;
+				line-height: 40px;
+				/* or 143% */
+				text-align: center;
+				color: #1D1D1B;
+				flex: none;
+				order: 0;
+				flex-grow: 0;
+				padding: 0;
+			}
+		}
+	}
+
+	.button-container {
+		width: 100%;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		margin-top: 30px;
+
+		button {
+			font-family: 'Montserrat';
+			font-style: normal;
+			font-weight: 700;
+			font-size: 18px;
+			line-height: 28px;
+			/* identical to box height, or 156% */
+			text-transform: uppercase;
+			background: $salat;
+			box-shadow: 0px 1px 2px;
+			border-radius: 6px;
+			flex: none;
+			order: 1;
+			flex-grow: 0;
+			color: #fff;
+			border: none;
+			width: 300px;
+			height: 60px;
+			transition: all .2s linear;
+		}
+
+		button:hover {
+			color: #000;
+			background: none;
+			border: 3px solid $salat;
+			border-radius: 30px;
+			transition: all .2s linear;
+			box-shadow: 0 0 0;
+		}
+	}
+}

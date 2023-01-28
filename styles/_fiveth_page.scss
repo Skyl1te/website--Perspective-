@@ -1,0 +1,58 @@
+@import '_extra.scss';
+
+.fiveth-page {
+	margin-top: 120px;
+	.up-title {
+		margin-top: -40px;
+	}
+
+	.blocks {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		width: 100%;
+		height: 400px;
+		margin-top: 85px;
+
+		.block {
+			display: flex;
+			flex-direction: column;
+			justify-content: space-between;
+			width: 30%;
+			height: 100%;
+			&__date {
+				color: #fff;
+				padding: 5px;
+				font-size: 16px;
+				span {
+					border-radius: 21px;
+					background: $salat;
+					padding: 5px 20px;
+				}
+			}
+
+			&__connotation {
+				font-family: 'Montserrat';
+				font-style: normal;
+				font-weight: 700;
+				font-size: 26px;
+				line-height: 40px;
+				/* or 143% */
+
+
+				color: #1D1D1B;
+
+
+				/* Inside auto layout */
+
+				flex: none;
+				order: 0;
+				flex-grow: 0;
+			}
+
+			img {
+
+			}
+		}
+	}
+}
