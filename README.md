@@ -10,7 +10,7 @@
 
 ## About
 
-The site of huge company called "Perspective" 
+website "Perspective"
 
 ## Developers 
 <a href="https://github.com/Skyl1te">_Skyl1te</a>
